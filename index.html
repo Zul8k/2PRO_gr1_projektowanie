@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,5 +8,15 @@
 <body>
     <h1>drugi</h1>
     <h1>trzeci</h1>
+    <h1 id="liczba">0</h1>
+    <button onclick="dodawanie()">click</button>
+
+    <script>
+        function dodawanie(){
+            let number = document.getElementById("liczba").textContent;
+            number++;
+            document.getElementById("liczba").innerHTML = number;
+        }
+    </script>
 </body>
 </html>
