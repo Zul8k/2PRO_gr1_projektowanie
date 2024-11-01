@@ -1,0 +1,65 @@
+.blackDiv{
+    /* background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3,0,47,1) 100%); */
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(24,24,24,1) 84%);
+    color: white;
+    transition: all 5s;
+}
+
+.black{
+    background-color: rgba(13,13,13,1);
+    transition: all 1.5s;
+}
+
+/* @keyframes animacja {
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: rgb(2, 2, 3);
+    }
+} */
+*{
+    font-family:'Franklin Gothic Medium';
+}
+
+.whiteDiv{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(73,73,73,1) 0%, rgba(255,255,255,1) 84%);
+    color: black;
+    transition: all 5s;
+}
+
+.white{
+    background-color: white;
+    transition: all 1.5s;
+}
+
+label{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* cursor: pointer; */
+}
+
+#tglMoon{
+    position: absolute;
+    opacity: 1;
+}
+
+.moon{
+    font-size: 3em;
+    color: #666;
+    filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+}
+
+.toggle{
+    position:absolute;
+    display: flex;
+    
+}
