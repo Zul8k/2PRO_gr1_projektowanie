@@ -54,17 +54,30 @@ pktDiv.style.margin = "5px"
 
 var guessDiv = document.createElement("div")
 guessDiv.setAttribute("id", "guessDiv")
+guessDiv.classList.add("wDiv")
 body.appendChild(guessDiv)
-guessDiv.style.height = "400px"
-guessDiv.style.background = "#006D77"
-guessDiv.style.border = "4px solid #00565E"
-guessDiv.style.width = "400px"
+guessDiv.style.height = "200px"
+// guessDiv.style.background = "#006D77"
+// guessDiv.style.border = "4px solid #00565E"
+guessDiv.style.width = "800px"
 guessDiv.style.margin = "0"
 guessDiv.style.display = "flex"
 guessDiv.style.justifySelf = "center"
 guessDiv.style.justifyContent = "center"
 guessDiv.style.flexwrap = "wrap"
 guessDiv.style.borderRadius = "30px"
+
+// let guessDiv2 = document.createElement("div")
+// guessDiv.appendChild(guessDiv2)
+// guessDiv2.style.float = "end"
+// guessDiv2.style.width = "400px"
+// guessDiv2.style.height = "200px"
+
+// let guessDiv3 = document.createElement("div")
+// guessDiv.appendChild(guessDiv3)
+// guessDiv3.style.float = "end"
+// guessDiv3.style.width = "400px"
+// guessDiv3.style.height = "200px"
 
 // display: flex;
 // justify-content: center;
@@ -183,11 +196,17 @@ let punktnie = 0;
 let flaga = document.createElement("img")
 guessDiv.appendChild(flaga)
 flaga.style.width = "auto"
-flaga.style.height = "50%"
+flaga.style.height = "45%"
+flaga.style.borderRadius = "25px"
 
 const h2 = document.createElement("h2");
 h2.style.fontSize = "250%";
 h2.style.display = "flex"
+h2.style.flexWrap = "wrap"
+// h2.style.justifySelf = "center"
+// h2.style.alignSelf = "center"
+// h2.style.marginTop = "75px"
+
 // h2.style.justifySelf = "flexend"
 
 const pktacja = document.createElement("ul");
@@ -267,6 +286,7 @@ check();
 
 var tglMode = document.createElement("button")
 body.appendChild(tglMode)
+tglMode.classList.add("blackDiv")
 tglMode.textContent = "dark"
 tglMode.setAttribute("onclick", "toggleMode()")
 tglMode.setAttribute("id", "tryb")
@@ -275,6 +295,8 @@ tglMode.style.height = "70px"
 tglMode.style.width = "100px"
 tglMode.style.fontWeight = "900"
 tglMode.style.fontSize = "150%"
+tglMode.style.float = "right"
+tglMode.style.marginRight = "40px"
 
 
 function toggleMode(){
@@ -293,8 +315,11 @@ function toggleMode(){
         tglMode.classList.remove("blackDiv")
         tglMode.classList.add("whiteDiv")
 
-        mainDiv.classList.remove("mainwDiv")
-        mainDiv.classList.add("mainbDiv")
+        guessDiv.classList.remove("wDiv")
+        guessDiv.classList.add("bDiv")
+
+        body.classList.add("backblack")
+        body.classList.remove("backwhite")
 
 
         tglMode.textContent = "white"
@@ -312,8 +337,11 @@ function toggleMode(){
         tglMode.classList.remove("whiteDiv")
         tglMode.classList.add("blackDiv")
 
-        mainDiv.classList.remove("mainbDiv")
-        mainDiv.classList.add("mainwDiv")
+        guessDiv.classList.remove("bDiv")
+        guessDiv.classList.add("wDiv")
+
+        body.classList.add("backwhite")
+        body.classList.remove("backblack")
 
         tglMode.textContent = "dark"
     }

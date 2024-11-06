@@ -26,10 +26,26 @@
     font-family:'Franklin Gothic Medium';
 }
 
+.backblack{
+    background-color: #35393C;
+}
 
-.mainwDiv{
+.backwhite{
+    background-color: #DAFFEF;
+}
+
+.bDiv{
+    border: 4px solid #FF363C;
+    background-color: #E01C22;
+    transition: all 5s;
+    color: white;
+}
+
+.wDiv{
     background-color:#006D77;
     border: 4px solid #00565E;
+    transition: all 5s;
+    color: black;
 }
 
 .whiteDiv{
