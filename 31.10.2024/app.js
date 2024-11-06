@@ -2,6 +2,7 @@ let body = document.querySelector("body")
 // body.style.backgroundColor = "#272424"
 body.classList.add("white")
 body.style.minHeight = "100vh"
+body.style.margin = "0"
 
 
 let mainDiv = document.createElement("div")
@@ -21,7 +22,7 @@ pktDiv.style.width = "400px"
 pktDiv.style.flexWrap = "wrap"
 // pktDiv.style.color = "white"
 pktDiv.style.borderRadius = "30px"
-pktDiv.style.border = "5px black solid"
+// pktDiv.style.border = "5px black solid"
 pktDiv.style.display = "flex"
 pktDiv.style.justifyContent = "center"
 pktDiv.style.justifySelf = "center"
@@ -55,7 +56,8 @@ var guessDiv = document.createElement("div")
 guessDiv.setAttribute("id", "guessDiv")
 body.appendChild(guessDiv)
 guessDiv.style.height = "400px"
-guessDiv.style.background = "green"
+guessDiv.style.background = "#006D77"
+guessDiv.style.border = "4px solid #00565E"
 guessDiv.style.width = "400px"
 guessDiv.style.margin = "0"
 guessDiv.style.display = "flex"
@@ -87,7 +89,7 @@ Guess.style.justifySelf = "center"
 Guess.style.justifyContent ="center"
 Guess.style.alignItems="center"
 Guess.style.borderRadius = "30px"
-Guess.style.border = "2px black solid"
+// Guess.style.border = "2px black solid"
 
 
 var inp0 = document.createElement("input")
@@ -291,6 +293,10 @@ function toggleMode(){
         tglMode.classList.remove("blackDiv")
         tglMode.classList.add("whiteDiv")
 
+        mainDiv.classList.remove("mainwDiv")
+        mainDiv.classList.add("mainbDiv")
+
+
         tglMode.textContent = "white"
 
     }else if(tryb == "white"){
@@ -306,6 +312,9 @@ function toggleMode(){
         tglMode.classList.remove("whiteDiv")
         tglMode.classList.add("blackDiv")
 
+        mainDiv.classList.remove("mainbDiv")
+        mainDiv.classList.add("mainwDiv")
+
         tglMode.textContent = "dark"
     }
 }
@@ -313,11 +322,11 @@ function toggleMode(){
 
 
 
-let moonCheck = document.getElementById("tglMoon")
-console.log(moonCheck.value);
+// let moonCheck = document.getElementById("tglMoon")
+// console.log(moonCheck.value);
 
-function darkmode(){
-    let moonCheck = document.getElementById("tglMoon")
-console.log(moonCheck);
+// function darkmode(){
+//     let moonCheck = document.getElementById("tglMoon")
+// console.log(moonCheck);
 
-}
+// }
