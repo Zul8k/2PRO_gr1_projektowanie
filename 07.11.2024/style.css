@@ -1,0 +1,87 @@
+*{
+    font-family: "Inter";
+    font-weight: 900;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #F2F7F2;
+} 
+
+.napis{
+    display: block;
+    justify-self: center;
+    /* float: left; */
+}
+
+.par{
+    margin-top: 40px;
+    display: block;
+    justify-self: center;
+    font-size: 250%;
+}
+
+.GuessDiv{
+    width: 400px;
+    background-color: #5EB1BF;
+    border: 10px dashed #042A2B;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.flaga{
+    display: block;
+    justify-self: center;
+    margin: 20px;
+    border-radius: 10px;
+    height: 200px;
+    max-width: 90%;
+    max-height: auto;
+}
+
+.pick{
+    border-radius: 4px;
+    height: 50%;
+    width: 40px;
+}
+
+#btn_left{
+    float: left;
+}
+#btn_right{
+    float: right;
+}
+#DivPunkty{
+    width: 300px;
+    height: 200px;
+    display:block;
+    margin: auto    ;
+    /* justify-self: center;
+    justify-items:left; */
+}
+
+#h2_1{
+    display: flex;
+    justify-self: center;
+}
+
+#Maintxt{
+    display: flex;
+    justify-self: left;
+    margin: 10px;
+    font-size: 250%;
+}
+#DivNaFlagi{
+    width: 100vw;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#BetDiv{
+    height: 100px;
+
+}
+
