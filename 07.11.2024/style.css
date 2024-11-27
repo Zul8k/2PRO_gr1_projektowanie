@@ -7,13 +7,15 @@ body{
     height: 100%;
     width: 100%;
     margin: 0;
-    background-color: #F2F7F2;
+    background-color: #EAF2EF;
 } 
 
 .napis{
     display: block;
     justify-self: center;
     /* float: left; */
+    font-weight: 900;
+
 }
 
 .par{
@@ -25,10 +27,13 @@ body{
 
 .GuessDiv{
     width: 400px;
-    background-color: #5EB1BF;
-    border: 10px dashed #042A2B;
+    /* background-color: #5EB1BF; */
+    background-color: #D1D1D1;
+    /* border: 10px dashed #042A2B; */
+    border: none;
     border-radius: 20px;
     text-align: center;
+    box-shadow: 0 0 6px #D1D1D1;
 }
 
 .flaga{
@@ -41,17 +46,46 @@ body{
     max-height: auto;
 }
 
-.pick{
+/* .pick{
     border-radius: 4px;
     height: 50%;
     width: 40px;
+} */
+
+.btn_left{
+    transition: width 1s, height 1s;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: 100px;
+    height: 55px;
+    border: none;
+    border-radius: 40px;
 }
 
-#btn_left{
-    float: left;
+.btn_left:hover{
+    transition: width 1.5s, height 1.5s;
+    width: 110px;
+    height: 60px;
+    cursor: pointer;
 }
-#btn_right{
+
+.btn_right{
+    transition: width 1s, height 1s;
     float: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 100px;
+    height: 55px;
+    border: none;
+    border-radius: 40px;
+}
+
+.btn_right:hover{
+    transition: width 1.5s, height 1.5s;
+    width: 110px;
+    height: 60px;
+    cursor: pointer;
 }
 #DivPunkty{
     width: 300px;
@@ -81,7 +115,14 @@ body{
 }
 
 #BetDiv{
-    height: 100px;
+    height: 200px;
 
 }
 
+.wrong{
+    background-color: #D7263D;
+}
+
+.correct{
+    background-color: #49D442;
+}
