@@ -2,6 +2,7 @@ let body = document.querySelector("body")
 let poprawne = 0
 let niepoprawne = 0
 
+
 async function getData(){
     const data = await fetch("https://restcountries.com/v3.1/region/europe")
     const json = await data.json()
@@ -19,6 +20,16 @@ async function przypisz() {
 }
 
 przypisz()
+
+// let start = document.createElement("button")
+// body.appendChild(start)
+// start.textContent = "start"
+// start.setAttribute("onclick", "start1()")
+
+// function start1(){
+
+    // body.removeChild(start)
+// body.removeChild(*)
 
 let Maintxt = document.createElement("h1")
 body.appendChild(Maintxt)
@@ -116,6 +127,7 @@ Div_Guess2.appendChild(odp2)
 
 
 
+let dane = [];
 // let button2 = document.createElement("button")
 // Div_Guess2.appendChild(button2)
 // button2.setAttribute("id", "button2")
@@ -137,18 +149,17 @@ Div_Guess2.appendChild(odp2)
 
 
 async function random(){
-    let data = await getData();
     losowa1 = Math.floor(Math.random()*53)
     console.log(losowa1);
     losowa2 = Math.floor(Math.random()*53)
     console.log(losowa2);
 
-    flaga1.setAttribute("src", data[losowa1].flags.png)
-    nazwa1.textContent = data[losowa1].name.common
+    flaga1.setAttribute("src", dane[losowa1].flags.png)
+    nazwa1.textContent = dane[losowa1].name.common
     // button1.textContent = data[losowa1].name.common+ " have bigger population"
 
-    flaga2.setAttribute("src", data[losowa2].flags.png)
-    nazwa2.textContent = data[losowa2].name.common
+    flaga2.setAttribute("src", dane[losowa2].flags.png)
+    nazwa2.textContent = dane[losowa2].name.common
     // button2.textContent = data[losowa2].name.common+ " have bigger population"
 
     if(losowa1 == losowa2){
@@ -220,14 +231,5 @@ function right(){
         btn_right.classList.add("wrong")
     }
 }
-
+// }
 // setTimeout(right, 500)
-
-
-
-
-
-
-
-
-
